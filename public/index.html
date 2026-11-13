@@ -1,0 +1,131 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#081326"><title>รับโค้ดกิจกรรม | HOTZA8888</title><style>
+:root{color-scheme:dark;font-family:system-ui,Tahoma,sans-serif;background:#081326;color:#f5f7fd}*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:24px 16px;background:radial-gradient(ellipse at 50% 5%,#173662 0,transparent 60%),#081326}main{width:min(100%,500px);text-align:center}.brand{font-weight:950;font-style:italic;font-size:clamp(30px,7vw,46px);letter-spacing:-.05em;margin-bottom:28px}.brand span{color:#f4c76a}.card{border:1px solid #39506d;border-radius:24px;padding:clamp(22px,6vw,44px);background:linear-gradient(155deg,#142744,#0c192e 75%);box-shadow:0 24px 80px #0005}.icon{display:grid;place-items:center;margin:0 auto 20px;width:66px;height:52px;border:1px dashed #e7b956;border-radius:12px;color:#f4c76a;font:bold 23px monospace;background:#e7b95610}h1{font-size:clamp(24px,6vw,38px);margin:0 0 12px}p{margin:0 0 22px;color:#b9c8dd;line-height:1.65;white-space:pre-line}button{font:inherit;font-weight:800;border:0;cursor:pointer;min-height:50px;border-radius:12px;padding:10px 18px;width:100%;background:linear-gradient(115deg,#ffe4a4,#eab750);color:#161006}button:focus-visible{outline:3px solid white;outline-offset:4px}button:disabled{opacity:.65;cursor:default}.reveal:not([hidden]){animation:reveal .55s ease both}.code{margin:18px 0 10px;padding:14px;border:1px dashed #9a783b;border-radius:12px;color:#ffe4a4;background:#081326;font:bold clamp(17px,5vw,25px) monospace;overflow-wrap:anywhere}.copy{background:#203755;color:white}.stats{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 24px;padding-top:22px;color:#afc0d7;font-size:14px}.stats strong{color:#fff}.dot{display:inline-block;width:7px;height:7px;background:#71dbaa;border-radius:50%;margin-right:6px}#status:empty{display:none}#status{margin:12px 0 0}@keyframes reveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+body{position:relative;isolation:isolate;background:radial-gradient(ellipse at 50% 0,#293b5b 0,transparent 62%),#081326}
+main{position:relative;z-index:1}
+.brand{margin-bottom:22px}
+
+.card{border-color:#836139;background:linear-gradient(150deg,#362039 0,#152440 38%,#0c192e 80%);box-shadow:0 24px 80px #0005,inset 0 1px #e8b55c40}
+.icon{position:relative;border:1px solid #e4ad62;background:linear-gradient(145deg,#c44039,#74182a);box-shadow:0 6px 22px #ce412842;color:#ffe4a4}
+.icon::before{content:"";position:absolute;inset:4px 6px auto;height:16px;border-bottom:1px solid #e4ad62;border-radius:0 0 50% 50%}
+.icon span{position:relative;top:4px;font-family:serif}
+#claim{box-shadow:0 5px 20px #eab75036}
+#claim:hover{filter:brightness(1.08)}
+.festive{position:absolute;z-index:-1;inset:0;overflow:hidden;pointer-events:none}
+.lantern{position:absolute;top:clamp(40px,11vh,120px);width:clamp(38px,8vw,82px);height:clamp(36px,7vw,70px);border-radius:40%;background:repeating-linear-gradient(90deg,transparent 0 16%,#f8b75256 17% 18%,transparent 20% 25%),radial-gradient(ellipse at center,#d95438,#8e1426);border-block:4px solid #d8a451;box-shadow:0 0 44px #ff553741;transform-origin:50% -90px;animation:sway 5s ease-in-out infinite alternate}
+.lantern:first-child{left:clamp(14px,12vw,220px)}
+.lantern:last-child{right:clamp(14px,12vw,220px);animation-delay:-2s}
+.lantern::before,.lantern::after{content:"";position:absolute;left:50%;width:2px;background:#d8a451}
+.lantern::before{height:180px;bottom:100%}
+.lantern::after{height:17px;top:100%;box-shadow:3px 7px #d8a451,-3px 7px #d8a451}
+@keyframes sway{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+.burst{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:3}
+.spark{position:absolute;left:var(--x);top:var(--y);width:var(--size);height:var(--size);background:var(--color);border-radius:2px;box-shadow:0 0 9px var(--color);animation:scatter 850ms ease-out both}
+@keyframes scatter{0%{opacity:1;transform:translate(-50%,-50%) scale(.55)}30%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--spin)) scale(.25)}}
+@media(max-width:600px){.lantern{top:28px;opacity:.75}.lantern:first-child{left:12px}.lantern:last-child{right:12px}body{padding-top:70px}}
+@media(prefers-reduced-motion:reduce){.spark{display:none}}
+.brand img{display:block;width:min(100%,263px);height:auto;margin-inline:auto;border-radius:8px}.stats{gap:8px 16px}</style></head><body><div class="festive" aria-hidden="true"><i class="lantern"></i><i class="lantern"></i></div><div class="burst" id="burst" aria-hidden="true"></div><main><div class="brand">HOTZA<span>888</span></div><section class="card"><div class="icon" aria-hidden="true"><span>福</span></div><h1>รับโค้ดกิจกรรม</h1><p>กดปุ่มเพื่อเปิดดูโค้ดและรายละเอียดกิจกรรม</p><button id="claim" aria-controls="reveal" aria-expanded="false">เปิดดูโค้ด</button><div id="reveal" class="reveal" hidden><div class="code" id="code" tabindex="-1"></div><p id="details"></p><button class="copy" id="copy">คัดลอกโค้ด</button></div><p id="status" role="status"></p></section><div class="stats"><span>ผู้เข้าชมสะสม <strong id="total">—</strong></span><span><i class="dot" aria-hidden="true"></i>กำลังอยู่บนหน้า <strong id="online">—</strong></span><span>รับโค้ดแล้ว <strong id="claimed">—</strong></span></div></main>
+<script>
+const byId = id => document.getElementById(id);
+const claim = byId('claim'), status = byId('status'), code = byId('code');
+async function api(path, options) {
+  const response = await fetch(path, options);
+  if (!response.ok) throw new Error('Request failed');
+  return response.json();
+}
+function celebrate(origin) {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const burst = byId('burst');
+  const particles = document.createDocumentFragment();
+  const colors = ['#ffcc69', '#fff0ba', '#ff6258', '#e9a144'];
+  for (let i = 0; i < 28; i++) {
+    const angle = i / 28 * Math.PI * 2;
+    const distance = Math.min(innerWidth * .42, 235) * (.5 + Math.random() * .5);
+    const spark = document.createElement('i');
+    spark.className = 'spark';
+    const values = {
+      x: origin.left + origin.width / 2 + 'px',
+      y: origin.top + origin.height / 2 + 'px',
+      dx: Math.cos(angle) * distance + 'px',
+      dy: Math.sin(angle) * distance + 'px',
+      size: 3 + Math.random() * 4 + 'px',
+      spin: (Math.random() - .5) * 700 + 'deg',
+      color: colors[i % colors.length]
+    };
+    for (const [key, value] of Object.entries(values)) spark.style.setProperty('--' + key, value);
+    particles.append(spark);
+  }
+  burst.replaceChildren(particles);
+  setTimeout(() => burst.replaceChildren(), 900);
+}
+claim.onclick = async () => {
+  claim.disabled = true;
+  status.textContent = 'กำลังเปิดดูโค้ด…';
+  try {
+    const activity = await api('/api/event', visitorRequest('claim'));
+    if (!activity.code) {
+      status.textContent = 'ยังไม่มีโค้ดกิจกรรมในขณะนี้';
+      claim.disabled = false;
+      return;
+    }
+    const origin = claim.getBoundingClientRect();
+    updateClaimCount(activity.claimed);
+    code.textContent = activity.code;
+    byId('details').textContent = activity.details;
+    byId('details').hidden = !activity.details;
+    byId('reveal').hidden = false;
+    claim.setAttribute('aria-expanded', 'true');
+    code.focus({preventScroll:true});
+    claim.hidden = true;
+    celebrate(origin);
+    status.textContent = '';
+  } catch {
+    status.textContent = 'เปิดโค้ดไม่สำเร็จ ลองกดอีกครั้งได้ครับ';
+    claim.disabled = false;
+  }
+};
+byId('copy').onclick = async () => {
+  try {
+    await navigator.clipboard.writeText(code.textContent);
+    status.textContent = 'คัดลอกโค้ดแล้ว';
+  } catch {
+    const range = document.createRange();
+    range.selectNodeContents(code);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+    status.textContent = 'เลือกข้อความแล้ว ใช้คำสั่งคัดลอกของอุปกรณ์ได้เลย';
+  }
+};
+let visitor = crypto.randomUUID();
+try {
+  visitor = localStorage.getItem('hotza-event-visitor') || visitor;
+  localStorage.setItem('hotza-event-visitor', visitor);
+} catch {}
+function visitorRequest(action) {
+  return {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({visitor, action})};
+}
+let displayedClaimCount = 0;
+function updateClaimCount(count) {
+  displayedClaimCount = Math.max(displayedClaimCount, count);
+  byId('claimed').textContent = displayedClaimCount.toLocaleString('th-TH');
+}
+let updating = false;
+async function heartbeat() {
+  if (document.hidden || updating) return;
+  updating = true;
+  try {
+    const {total, online, claimed} = await api('/api/event', visitorRequest('presence'));
+    updateClaimCount(claimed);
+    byId('total').textContent = total.toLocaleString('th-TH');
+    byId('online').textContent = online.toLocaleString('th-TH');
+  } catch {
+    byId('total').textContent = byId('online').textContent = '—';
+  } finally {
+    updating = false;
+  }
+}
+heartbeat();
+setInterval(heartbeat, 15000);
+document.addEventListener('visibilitychange', heartbeat);
+</script></body></html>
